@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "SATC e-commerce CI/CD demonstration application",
   "scripts": {
-    "test": "node --check app.js"
+    "test": "node --test test/app.test.js",
+    "quality": "node --check app.js"
   }
 }
