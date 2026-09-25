@@ -1,0 +1,8 @@
+{
+  "name": "satc-ecommerce",
+  "version": "1.0.0",
+  "description": "SATC e-commerce CI/CD demonstration application",
+  "scripts": {
+    "test": "node --check app.js"
+  }
+}
