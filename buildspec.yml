@@ -15,8 +15,10 @@ phases:
   build:
     commands:
       - echo "Building SATC e-commerce application"
+      - rm -rf build
       - mkdir -p build
-      - cp index.html app.js package.json build/
+      - cp index.html app.js package.json appspec.yml build/
+      - cp -r scripts build/
 
   post_build:
     commands:
