@@ -7,10 +7,12 @@ phases:
       - node --version
       - npm --version
 
-  pre_build:
-    commands:
-      - echo "Running application tests"
-      - npm test
+ pre_build:
+  commands:
+    - echo "Running SATC unit tests"
+    - npm test
+    - echo "Running SATC code quality checks"
+    - npm run quality
 
   build:
     commands:
